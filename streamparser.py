@@ -15,7 +15,7 @@ __copyright__ = 'Copyright 2016--2018, Sushain K. Cherivirala, Kevin Brubeck Unh
 __credits__ = ['Sushain K. Cherivirala', 'Kevin Brubeck Unhammer']
 __license__ = 'GPLv3+'
 __status__ = 'Production'
-__version__ = '5.0.2'
+__version__ = '5.0.3'
 
 import fileinput
 import functools
@@ -192,8 +192,8 @@ def parse(stream, with_text=False):  # type: (Iterator[str], bool) -> Iterator[U
         with_text (bool, optional): A boolean defining whether to output preceding text with each lexical unit.
 
     Yields:
-        LexicalUnit: The next lexical unit found in the character stream. (if withText is False)
-        (str, LexicalUnit): The next lexical unit found in the character stream and the the text that seperated it from the prior unit in a tuple. (if withText is True)
+        LexicalUnit: The next lexical unit found in the character stream. (if with_text is False)
+        (str, LexicalUnit): The next lexical unit found in the character stream and the the text that seperated it from the prior unit in a tuple. (if with_text is True)
     """
 
     buffer = ''
