@@ -120,7 +120,7 @@ def _parse_subreading(reading):  # type: (str) -> List[Tuple[str, str]]
     buf = ''
     stream = (c for c in reading)
     for c in stream:
-        if c == '+':
+        if c == '++++':
             subs.append((lemma, buf))
             buf = ''
             lemma = ''
